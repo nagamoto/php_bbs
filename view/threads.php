@@ -2,37 +2,37 @@
 include __DIR__ . "/parts/header.php";
 include __DIR__ . "/parts/sign_in_form.php";
 require_once __DIR__ . '/../class/thread.php';
-switch ($_SERVER['REQUEST_METHOD']){
+$get_id = filter_input( INPUT_GET, "id" );
+$action = $_SERVER['REQUEST_METHOD'];
+if($get_action = filter_input( INPUT_GET, "action" )){
+    $action = 'DELETE';
+}
+switch ($action){
     case 'POST':
+        $title = filter_input(INPUT_POST, "title");
+        $text = filter_input(INPUT_POST, "text");
+        $thread = new Thread();
+        if ($get_id) {//既存をupdate
+            $params = array('thread_id'=> $get_id,'title' => $title,'text' => $text);
+            $thread->update($params);
+        }
+        else{//新規をPOST
+            $user_id = 2;//本来はログイン情報から持ってくる
+            $params = array('user_id'=> $user_id,'title' => $title,'text' => $text);
+            $get_id = $thread->add($params);
+        }
         break;
     case 'DELETE':
+        if ($get_id) {//DELETE
+            $thread = new Thread();
+            $thread->deleteRow($get_id);
+            header('Location: /bbs/');
+            exit;
+        }
+        else{
+            print "delete miss";
+        }
         break;
-    case 'GET':
-        break;
-}
-if ($_SERVER['REQUEST_METHOD'] === 'POST'){
-    $title = filter_input(INPUT_POST, "title");
-    $text = filter_input(INPUT_POST, "text");
-    $thread = new Thread();
-    if ($post_id = filter_input( INPUT_GET, "id")) {//既存をupdate
-        $params = array('thread_id'=> $post_id,'title' => $title,'text' => $text);
-        $thread->update($params);
-        $get_id = $post_id;
-    }
-    else{//新規をPOST
-        $user_id = 2;//本来はログイン情報から持ってくる
-        $params = array('user_id'=> $user_id,'title' => $title,'text' => $text);
-        $get_id = $thread->add($params);
-    }
-}
-else {
-
-    $get_id = filter_input( INPUT_GET, "id" );
-    $delete_id = filter_input( INPUT_DELETE, "id" );
-}
-
-if ($delete_id) {
-exit;
 }
 if ($get_id) {
     $thread = new Thread();
@@ -48,15 +48,13 @@ if ($get_id) {
         <td><?php print $res[0]['created_at']?></td>
         </tr>
 </table>
+    <Div Align="right">
+        <a href="<?php print "./threads?id=" . $res[0]['id']?>&action=delete">delete</a>
+    </Div>
     <Div Align="center">
 <?php print $res[0]['text']?>
 </Div>
     <?php
-}
-else{
-
-
-
 }
 
 include __DIR__ . "/parts/footer.php";

@@ -67,4 +67,12 @@ class Thread extends BaseModel{
 
     }
 
+    public function deleteRow($id){
+        self::initDb();
+        print $id;
+        $where = "id = " . $id;
+        $res = $this->delete($where);
+        return $res;
+    }
+
 }

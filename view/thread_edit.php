@@ -16,8 +16,7 @@ $text = $res[0]['text'];
     <table>
         <tr>
         <td>title:</td>
-        <td><input type="text" name="title" placeholder="title" value="
-        <?php echo htmlspecialchars($thread_title, ENT_QUOTES, 'UTF-8')?>"></td>
+        <td><input type="text" name="title" placeholder="title" value="<?php echo htmlspecialchars($thread_title, ENT_QUOTES, 'UTF-8')?>"></td>
         </tr>
         <tr>
             <td>textarea:</td>
