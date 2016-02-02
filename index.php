@@ -1,4 +1,6 @@
 <?php
+include __DIR__ . "/view/parts/header.php";
+
 require_once __DIR__ . '/class/baseModel.php';
 BaseModel::initDb();
 

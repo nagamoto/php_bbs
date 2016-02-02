@@ -47,7 +47,7 @@ class Thread extends BaseModel{
         return $rows;
     }
     public function getOne($thread_id){
-        $sql = sprintf('SELECT * FROM threads  AS th inner join users ON th.user_id = users.id WHERE th.id = :thread_id');
+        $sql = sprintf('SELECT * FROM threads WHERE id = :thread_id');
         $params = array('thread_id' => $thread_id);
         $row = $this->query($sql, $params);
         return $row;

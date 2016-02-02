@@ -21,6 +21,7 @@ class BaseModel {
 
     // クエリ結果を取得
     public function query($sql, array $params = array()){
+        self::initDb();
         $stmt = self::$db->prepare($sql);
         if ($params != null) {
             foreach ($params as $key => $val) {
