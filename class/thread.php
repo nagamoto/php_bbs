@@ -8,6 +8,7 @@ class Thread extends BaseModel{
     private $created_at;
 
     public function __construct($user_id, $title, $text){
+        $this->name = 'threads';
         $this->user_id = $user_id;
         $this->title = $title;
         $this->text = $text;
@@ -54,7 +55,16 @@ class Thread extends BaseModel{
     }
 
     public function add($data){
+        self::initDb();
         $res = $this->insert($data);
         return $res;
     }
+
+    public function update($data){
+        self::initDb();
+        $stmt = self::$db->prepare("UPDATE threads SET title = :title , text = :text WHERE id = :id");
+        $stmt->execute([':title'=>$data['title'], ':text'=>$data['text'], ':id'=>$data['thread_id']]);
+
+    }
+
 }

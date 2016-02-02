@@ -52,9 +52,8 @@ class BaseModel {
         foreach ($data as $key => $val) {
             $stmt->bindValue(':' . $key, $val);
         }
-        $res  = $stmt->execute();
-
-        return $res;
+        $stmt->execute();
+        return self::$db->lastInsertId();
     }
 
     // DELETEを実行
@@ -73,4 +72,5 @@ class BaseModel {
 
         return $res;
     }
+
 }

@@ -7,3 +7,6 @@
   </style>
 </head>
 <body bgcolor="#ffffff" link="#4169e1" alink="#4169e1" vlink="#4169e1">
+<div align="left">
+  <a href="/bbs/">top</a>
+</div>

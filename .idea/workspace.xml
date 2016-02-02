@@ -22,13 +22,28 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="threads.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="threads.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/view/threads.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-0.625">
-              <caret line="1" column="38" selection-start-line="1" selection-start-column="38" selection-end-line="1" selection-end-column="38" />
+            <state vertical-scroll-proportion="0.16778524">
+              <caret line="5" column="16" selection-start-line="5" selection-start-column="16" selection-end-line="5" selection-end-column="16" />
               <folding>
-                <marker date="1454380617000" expanded="true" signature="293:352" placeholder="INSERT into threads... " />
+                <marker date="1454387242000" expanded="true" signature="1097:1142" placeholder="..." />
+                <marker date="1454387242000" expanded="true" signature="1256:1318" placeholder="..." />
+                <marker date="1454387242000" expanded="true" signature="1386:1407" placeholder="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="thread_edit.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/view/thread_edit.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-13.125">
+              <caret line="21" column="12" selection-start-line="21" selection-start-column="12" selection-end-line="21" selection-end-column="12" />
+              <folding>
+                <marker date="1454384432000" expanded="true" signature="447:509" placeholder="..." />
+                <marker date="1454384432000" expanded="true" signature="460:509" placeholder="..." />
               </folding>
             </state>
           </provider>
@@ -37,25 +52,26 @@
       <file leaf-file-name="thread.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/class/thread.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-10.0">
-              <caret line="47" column="5" selection-start-line="47" selection-start-column="5" selection-end-line="47" selection-end-column="5" />
+            <state vertical-scroll-proportion="-35.625">
+              <caret line="57" column="23" selection-start-line="57" selection-start-column="23" selection-end-line="57" selection-end-column="23" />
               <folding>
-                <marker date="1454380413000" expanded="true" signature="890:958" placeholder="SELECT id, t... threads" />
-                <marker date="1454380413000" expanded="true" signature="890:959" placeholder="SELECT * FRO... threads" />
-                <marker date="1454380413000" expanded="true" signature="1090:1133" placeholder="SELECT * FRO... threads" />
+                <marker date="1454386065000" expanded="true" signature="923:991" placeholder="SELECT id, t... threads" />
+                <marker date="1454386065000" expanded="true" signature="923:992" placeholder="SELECT * FRO... threads" />
+                <marker date="1454386065000" expanded="true" signature="1123:1166" placeholder="SELECT * FRO... threads" />
+                <marker date="1454386065000" expanded="true" signature="1510:1573" placeholder="UPDATE threa... " />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="baseModel.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="baseModel.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/class/baseModel.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.47142857">
-              <caret line="32" column="0" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
+            <state vertical-scroll-proportion="-15.0">
+              <caret line="51" column="41" selection-start-line="51" selection-start-column="41" selection-end-line="51" selection-end-column="41" />
               <folding>
-                <marker date="1454380650000" expanded="true" signature="1098:1129" placeholder="INSERT INTO " />
-                <marker date="1454380650000" expanded="true" signature="1535:1549" placeholder="DELETE FROM " />
+                <marker date="1454386533000" expanded="true" signature="1098:1129" placeholder="INSERT INTO " />
+                <marker date="1454386533000" expanded="true" signature="1547:1561" placeholder="DELETE FROM " />
               </folding>
             </state>
           </provider>
@@ -64,11 +80,21 @@
       <file leaf-file-name="index.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="7.5">
-              <caret line="7" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+            <state vertical-scroll-proportion="-2.375">
+              <caret line="25" column="0" selection-start-line="24" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
               <folding>
-                <marker date="1454378573000" expanded="true" signature="937:979" placeholder="..." />
+                <marker date="1454386678000" expanded="true" signature="893:935" placeholder="..." />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="header.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/view/parts/header.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-2.9411764">
+              <caret line="10" column="16" selection-start-line="10" selection-start-column="16" selection-end-line="10" selection-end-column="16" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -76,8 +102,8 @@
       <file leaf-file-name="pdo.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pdo.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-7.5">
-              <caret line="12" column="44" selection-start-line="12" selection-start-column="44" selection-end-line="12" selection-end-column="44" />
+            <state vertical-scroll-proportion="-0.0">
+              <caret line="16" column="44" selection-start-line="16" selection-start-column="44" selection-end-line="16" selection-end-column="44" />
               <folding>
                 <marker date="1454325481000" expanded="true" signature="250:294" placeholder="insert into users... " />
                 <marker date="1454325481000" expanded="true" signature="415:467" placeholder="insert into users... " />
@@ -86,11 +112,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="sign_in_form.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/view/parts/sign_in_form.php">
+      <file leaf-file-name="thread_form.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/view/parts/thread_form.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-8.75">
-              <caret line="14" column="40" selection-start-line="14" selection-start-column="40" selection-end-line="14" selection-end-column="40" />
+            <state vertical-scroll-proportion="-11.875">
+              <caret line="19" column="0" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -104,10 +130,13 @@
         <option value="$PROJECT_DIR$/header.php" />
         <option value="$PROJECT_DIR$/view/form/thread_form.php" />
         <option value="$PROJECT_DIR$/tap.php" />
-        <option value="$PROJECT_DIR$/index.php" />
+        <option value="$PROJECT_DIR$/view/thread_edit.php" />
         <option value="$PROJECT_DIR$/class/thread.php" />
-        <option value="$PROJECT_DIR$/view/threads.php" />
         <option value="$PROJECT_DIR$/class/baseModel.php" />
+        <option value="$PROJECT_DIR$/index.php" />
+        <option value="$PROJECT_DIR$/view/parts/header.php" />
+        <option value="$PROJECT_DIR$/view/parts/thread_form.php" />
+        <option value="$PROJECT_DIR$/view/threads.php" />
       </list>
     </option>
   </component>
@@ -224,6 +253,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/view" />
       <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/class" />
     </key>
@@ -297,7 +327,7 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="3" />
+      <option name="time" value="4" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -326,41 +356,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/view/parts/thread_form.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <marker date="1454372941000" expanded="true" signature="287:346" placeholder="INSERT into threads... " />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/view/parts/thread_update_form.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/view/parts/user_form.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/view/parts/comment_update_form.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-12.5">
-          <caret line="20" column="7" selection-start-line="20" selection-start-column="7" selection-end-line="20" selection-end-column="7" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/view/parts/header.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -372,14 +368,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/view/parts/sign_in_form.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-8.75">
-          <caret line="14" column="40" selection-start-line="14" selection-start-column="40" selection-end-line="14" selection-end-column="40" />
           <folding />
         </state>
       </provider>
@@ -400,20 +388,34 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.php">
+    <entry file="file://$PROJECT_DIR$/view/parts/comment_update_form.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="7.5">
-          <caret line="7" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
-          <folding>
-            <marker date="1454378573000" expanded="true" signature="937:979" placeholder="..." />
-          </folding>
+        <state vertical-scroll-proportion="-3.125">
+          <caret line="5" column="10" selection-start-line="5" selection-start-column="10" selection-end-line="5" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/view/parts/sign_in_form.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-4.375">
+          <caret line="7" column="6" selection-start-line="7" selection-start-column="6" selection-end-line="7" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/view/parts/thread_update_form.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.5033557">
+          <caret line="15" column="60" selection-start-line="15" selection-start-column="60" selection-end-line="15" selection-end-column="60" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/pdo.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-7.5">
-          <caret line="12" column="44" selection-start-line="12" selection-start-column="44" selection-end-line="12" selection-end-column="44" />
+        <state vertical-scroll-proportion="-0.0">
+          <caret line="16" column="44" selection-start-line="16" selection-start-column="44" selection-end-line="16" selection-end-column="44" />
           <folding>
             <marker date="1454325481000" expanded="true" signature="250:294" placeholder="insert into users... " />
             <marker date="1454325481000" expanded="true" signature="415:467" placeholder="insert into users... " />
@@ -421,35 +423,75 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/view/threads.php">
+    <entry file="file://$PROJECT_DIR$/class/baseModel.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.625">
-          <caret line="1" column="38" selection-start-line="1" selection-start-column="38" selection-end-line="1" selection-end-column="38" />
+        <state vertical-scroll-proportion="-15.0">
+          <caret line="51" column="41" selection-start-line="51" selection-start-column="41" selection-end-line="51" selection-end-column="41" />
           <folding>
-            <marker date="1454380617000" expanded="true" signature="293:352" placeholder="INSERT into threads... " />
+            <marker date="1454386533000" expanded="true" signature="1098:1129" placeholder="INSERT INTO " />
+            <marker date="1454386533000" expanded="true" signature="1547:1561" placeholder="DELETE FROM " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/view/parts/header.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-2.9411764">
+          <caret line="10" column="16" selection-start-line="10" selection-start-column="16" selection-end-line="10" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/view/parts/thread_form.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-11.875">
+          <caret line="19" column="0" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-2.375">
+          <caret line="25" column="0" selection-start-line="24" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
+          <folding>
+            <marker date="1454386678000" expanded="true" signature="893:935" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/view/thread_edit.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-13.125">
+          <caret line="21" column="12" selection-start-line="21" selection-start-column="12" selection-end-line="21" selection-end-column="12" />
+          <folding>
+            <marker date="1454384432000" expanded="true" signature="447:509" placeholder="..." />
+            <marker date="1454384432000" expanded="true" signature="460:509" placeholder="..." />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/class/thread.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-10.0">
-          <caret line="47" column="5" selection-start-line="47" selection-start-column="5" selection-end-line="47" selection-end-column="5" />
+        <state vertical-scroll-proportion="-35.625">
+          <caret line="57" column="23" selection-start-line="57" selection-start-column="23" selection-end-line="57" selection-end-column="23" />
           <folding>
-            <marker date="1454380413000" expanded="true" signature="890:958" placeholder="SELECT id, t... threads" />
-            <marker date="1454380413000" expanded="true" signature="890:959" placeholder="SELECT * FRO... threads" />
-            <marker date="1454380413000" expanded="true" signature="1090:1133" placeholder="SELECT * FRO... threads" />
+            <marker date="1454386065000" expanded="true" signature="923:991" placeholder="SELECT id, t... threads" />
+            <marker date="1454386065000" expanded="true" signature="923:992" placeholder="SELECT * FRO... threads" />
+            <marker date="1454386065000" expanded="true" signature="1123:1166" placeholder="SELECT * FRO... threads" />
+            <marker date="1454386065000" expanded="true" signature="1510:1573" placeholder="UPDATE threa... " />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/class/baseModel.php">
+    <entry file="file://$PROJECT_DIR$/view/threads.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.47142857">
-          <caret line="32" column="0" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.16778524">
+          <caret line="5" column="16" selection-start-line="5" selection-start-column="16" selection-end-line="5" selection-end-column="16" />
           <folding>
-            <marker date="1454380650000" expanded="true" signature="1098:1129" placeholder="INSERT INTO " />
-            <marker date="1454380650000" expanded="true" signature="1535:1549" placeholder="DELETE FROM " />
+            <marker date="1454387242000" expanded="true" signature="1097:1142" placeholder="..." />
+            <marker date="1454387242000" expanded="true" signature="1256:1318" placeholder="..." />
+            <marker date="1454387242000" expanded="true" signature="1386:1407" placeholder="..." />
           </folding>
         </state>
       </provider>
