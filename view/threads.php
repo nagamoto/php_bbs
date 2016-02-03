@@ -38,14 +38,21 @@ if ($get_id) {
     $thread = new Thread();
     $res = $thread->getOne($get_id);
     ?>
+    <?php if (isset($_SESSION["user_name"])) {?>
     <Div Align="right">
         <a href="<?php print "./threads?id=" . $res[0]['id']?>&action=delete">delete</a>
     </Div>
+    <?php }?>
 <table Align="center">
     <tr>
         <td>title:</td>
+    <?php if (isset($_SESSION["user_name"])) {?>
         <td><a href="<?php print "./thread_edit?id=" . $res[0]['id']?>"><?php print $res[0]['title']?></a></td>
-        </tr>
+    <?php }
+    else {?>
+        <td><?php print $res[0]['title']?></td>
+    <?php }?>
+    </tr>
     <tr>
         <td>created_at:</td>
         <td><?php print $res[0]['created_at']?></td>
@@ -56,8 +63,9 @@ if ($get_id) {
 </Div>
     <?php
     include __DIR__ . "/comments.php";
-    include __DIR__ . "/parts/comment_form.php";
-
+    if (isset($_SESSION["user_name"])) {
+        include __DIR__ . "/parts/comment_form.php";
+    }
 }
 
 include __DIR__ . "/parts/footer.php";

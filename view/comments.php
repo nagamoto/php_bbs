@@ -8,7 +8,12 @@ if ($get_id) {
 <table Align="center"><?php
     foreach ($res as $row) {?>
     <tr>
-        <td><a href="./comment_edit?id=<?php print $row[id]?>"><?php print $row[user_id]?></a></td>
+        <?php if (isset($_SESSION["user_name"])) {?>
+            <td><a href="./comment_edit?id=<?php print $row[id]?>"><?php print $row[user_id]?></a></td>
+        <?php }
+        else {?>
+            <td><?php print $row[user_id]?></td>
+        <?php }?>
         <td><?php print $row[created_at]?></td>
     </tr>
     <tr>

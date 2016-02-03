@@ -38,8 +38,9 @@ ERROR
 _EOT_;
     exit;
 }
-include __DIR__ . "/view/parts/thread_form.php";
-
+if (isset($_SESSION["user_name"])) {
+    include __DIR__ . "/view/parts/thread_form.php";
+}
 include __DIR__ . "/view/parts/footer.php";
 
 ?>
