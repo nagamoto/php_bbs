@@ -13,6 +13,5 @@
     </table>
         <input type="submit" name = "sign_in" value="sign_in">
         <input type="submit" value="create">
-        <input type="submit" value="cancel">
 </form>
 </Div>

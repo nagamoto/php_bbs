@@ -8,8 +8,6 @@ BaseModel::initDb();
 require_once __DIR__ . '/class/thread.php';
 
 try {
-    $db = new PDO(PDO_DSN, DB_USER, DB_PASS);
-    $db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 ?>
 <table Align="center">
     <tr>
@@ -21,7 +19,7 @@ try {
     $thread = new Thread();
     foreach ($thread->getAllList() as $row) {?>
     <tr>
-        <td><a href="./view/threads?id=<?php print $row[id]?>"><?php print $row[title]?></a></td>
+        <td><a href="/bbs/view/threads?id=<?php print $row[id]?>"><?php print $row[title]?></a></td>
         <td><?php print $row[created_at]?></td>
         <td><?php print $row[text]?></td>
     </tr>
@@ -38,7 +36,7 @@ ERROR
 _EOT_;
     exit;
 }
-if (isset($_SESSION["user_name"])) {
+if (isset($_SESSION["user_id"])) {
     include __DIR__ . "/view/parts/thread_form.php";
 }
 include __DIR__ . "/view/parts/footer.php";

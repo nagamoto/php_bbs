@@ -4,12 +4,11 @@ require_once __DIR__ . '/../class/comment.php';
 if ($get_id) {
     $comment = new Comment();
     $res = $comment->getAllList($get_id);
-}?>
-
+?>
 <table Align="center"><?php
     foreach ($res as $row) {?>
     <tr>
-        <?php if (isset($_SESSION["user_name"])) {?>
+        <?php if ($_SESSION["user_id"] == $row[user_id]) {?>
             <td><a href="./comment_edit?id=<?php print $row[id]?>"><?php print $row[user_id]?></a></td>
         <?php }
         else {?>
@@ -23,3 +22,4 @@ if ($get_id) {
     </tr>
 <?php }?>
 </table>
+<?php }

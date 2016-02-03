@@ -1,3 +1,9 @@
+<?php
+session_start();
+if (!isset($_SESSION['user_id'])){
+    exit;
+}
+?>
 <Div Align="center">
     <h2>comment_form</h2>
     <form action="./comments_receiver" method="POST">

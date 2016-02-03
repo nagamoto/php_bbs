@@ -62,8 +62,8 @@ class Comment extends BaseModel{
 
     public function update($data){
         self::initDb();
-        $stmt = self::$db->prepare(sprintf("UPDATE %s SET title = :title , text = :text WHERE id = :id", $this->name));
-        $stmt->execute([':title'=>$data['title'], ':text'=>$data['text'], ':id'=>$data['thread_id']]);
+        $stmt = self::$db->prepare(sprintf("UPDATE %s SET text = :text WHERE id = :id", $this->name));
+        $stmt->execute([':text'=>$data['text'], ':id'=>$data['id']]);
 
     }
 
