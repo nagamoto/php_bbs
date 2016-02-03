@@ -1,4 +1,5 @@
 <?php
+session_start();
 require_once __DIR__ . '/../class/comment.php';
 if ($get_id) {
     $comment = new Comment();

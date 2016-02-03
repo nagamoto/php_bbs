@@ -1,7 +1,7 @@
 <?php
+session_start();
 include __DIR__ . "/view/parts/header.php";
 include __DIR__ . "/view/parts/sign_in_form.php";
-
 require_once __DIR__ . '/class/baseModel.php';
 BaseModel::initDb();
 

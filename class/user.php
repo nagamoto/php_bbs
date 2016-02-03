@@ -31,11 +31,12 @@ class User extends BaseModel{
         $this->pass = $pass;
     }
 
-    public function getUsersPass($user_name){
-        $sql = sprintf('SELECT pass FROM %s WHERE name = :user_name', $this->name);
+    public function getUsersIDandPass($user_name){
+        $sql = sprintf('SELECT id pass FROM %s WHERE name = :user_name', $this->name);
         $params = array('user_name' => $user_name);
         $row = $this->query($sql, $params);
-        return $row[0]['pass'];
+        $res = array('id'=> $row[0]['id'], 'pass'=> $row[0]['pass']);
+        return $res;
     }
 
     public function add($data){
@@ -61,18 +62,15 @@ class User extends BaseModel{
     public function isAuthenticate($user_name, $pass){
         $password = $this->passMD5($pass);
         $params = array('name'=> $user_name, 'pass' => $password);
-        print_r($params);
-        $this->add($params);
-        return "true";
+        $res = $this->add($params);
+        return $res;
     }
 
     public function signIn($user_name, $pass){
-        print "debug userin";
         $password = $this->passMD5($pass);
-        $password_inDB = $this->getUsersPass($user_name);
-        print "debug passgot";
-        print $password_inDB;
-        If ($password == $password_inDB) return "true";
+        $idAndPass = $this->getUsersIDandPass($user_name);
+        $password_inDB = $idAndPass['pass'];
+        If ($password == $password_inDB) return $idAndPass['id'];
         return "false";
     }
 

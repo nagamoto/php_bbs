@@ -1,4 +1,5 @@
 <?php
+session_start();
 include __DIR__ . "/parts/header.php";
 include __DIR__ . "/parts/sign_in_form.php";
 require_once __DIR__ . '/../class/thread.php';
@@ -67,5 +68,5 @@ if ($get_id) {
         include __DIR__ . "/parts/comment_form.php";
     }
 }
-
+?>
 include __DIR__ . "/parts/footer.php";
