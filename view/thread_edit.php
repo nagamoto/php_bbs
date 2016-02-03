@@ -11,7 +11,7 @@ $thread_title = $res[0]['title'];
 $text = $res[0]['text'];
 ?>
 <Div Align="center">
-    <h2>thread_form</h2>
+    <h2>thread_edit</h2>
     <form action="<?php print "./threads?id=" . $id?>" method="POST">
     <table>
         <tr>
@@ -20,8 +20,9 @@ $text = $res[0]['text'];
         </tr>
         <tr>
             <td>textarea:</td>
-            <td><TEXTAREA cols="30" rows="5" name="text" value="
-        <?php echo htmlspecialchars($text, ENT_QUOTES, 'UTF-8')?>"><?php echo htmlspecialchars($text, ENT_QUOTES, 'UTF-8')?></TEXTAREA></td>
+            <td><TEXTAREA cols="30" rows="5" name="text" value="<?php
+                echo htmlspecialchars($text, ENT_QUOTES, 'UTF-8')?>"><?php
+                    echo htmlspecialchars($text, ENT_QUOTES, 'UTF-8')?></TEXTAREA></td>
             </tr>
     </table>
     <input type="submit" value="update">

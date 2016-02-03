@@ -43,12 +43,12 @@ class Thread extends BaseModel{
     }
 
     public function getAllList(){
-        $sql = 'SELECT id, title, created_at, text FROM threads  ORDER BY created_at';
+        $sql = sprintf("SELECT id, title, created_at, text FROM %s ORDER BY created_at", $this->name);
         $rows = $this->getAll($sql);
         return $rows;
     }
     public function getOne($thread_id){
-        $sql = sprintf('SELECT * FROM threads WHERE id = :thread_id');
+        $sql = sprintf('SELECT * FROM %s WHERE id = :thread_id', $this->name);
         $params = array('thread_id' => $thread_id);
         $row = $this->query($sql, $params);
         return $row;
@@ -62,14 +62,13 @@ class Thread extends BaseModel{
 
     public function update($data){
         self::initDb();
-        $stmt = self::$db->prepare("UPDATE threads SET title = :title , text = :text WHERE id = :id");
+        $stmt = self::$db->prepare(sprintf("UPDATE %s SET title = :title , text = :text WHERE id = :id", $this->name));
         $stmt->execute([':title'=>$data['title'], ':text'=>$data['text'], ':id'=>$data['thread_id']]);
 
     }
 
     public function deleteRow($id){
         self::initDb();
-        print $id;
         $where = "id = " . $id;
         $res = $this->delete($where);
         return $res;

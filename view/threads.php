@@ -38,6 +38,9 @@ if ($get_id) {
     $thread = new Thread();
     $res = $thread->getOne($get_id);
     ?>
+    <Div Align="right">
+        <a href="<?php print "./threads?id=" . $res[0]['id']?>&action=delete">delete</a>
+    </Div>
 <table Align="center">
     <tr>
         <td>title:</td>
@@ -48,13 +51,13 @@ if ($get_id) {
         <td><?php print $res[0]['created_at']?></td>
         </tr>
 </table>
-    <Div Align="right">
-        <a href="<?php print "./threads?id=" . $res[0]['id']?>&action=delete">delete</a>
-    </Div>
     <Div Align="center">
 <?php print $res[0]['text']?>
 </Div>
     <?php
+    include __DIR__ . "/comments.php";
+    include __DIR__ . "/parts/comment_form.php";
+
 }
 
 include __DIR__ . "/parts/footer.php";

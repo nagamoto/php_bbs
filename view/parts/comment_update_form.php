@@ -13,7 +13,7 @@ $text = '';
         <tr>
             <td>textarea:</td>
             <TEXTAREA cols="30" rows="5" name="text" value="
-        <?php echo htmlspecialchars($text, ENT_QUOTES, 'UTF-8')?>">デフォルト値</TEXTAREA>            </tr>
+        <?php echo htmlspecialchars($text, ENT_QUOTES, 'UTF-8')?>"></TEXTAREA>            </tr>
             </tr>
     </table>
     <input type="submit" value="update">

@@ -7,7 +7,6 @@ BaseModel::initDb();
 
 require_once __DIR__ . '/class/thread.php';
 
-
 try {
     $db = new PDO(PDO_DSN, DB_USER, DB_PASS);
     $db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
