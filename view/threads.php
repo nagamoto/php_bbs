@@ -68,5 +68,4 @@ if ($get_id) {
         include __DIR__ . "/parts/comment_form.php";
     }
 }
-?>
 include __DIR__ . "/parts/footer.php";

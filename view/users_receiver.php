@@ -8,6 +8,8 @@ if(filter_input( INPUT_POST, 'sign_in' )){
 if(filter_input( INPUT_POST, 'sign_out' )){
     $action = 'sign_out';
 }
+print $action;
+
 $user = new User();
 $name = filter_input(INPUT_POST, "user_name" );
 $pass = filter_input(INPUT_POST, "user_pass");
@@ -34,7 +36,6 @@ switch ($action){
         header("Location: /bbs/");
         exit;
     case 'sign_out':
-        print "debug signout";
         $_SESSION = array();
         $_COOKIE['user_name'] = null;
         $_COOKIE['PHPSESSID'] = null;

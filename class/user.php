@@ -32,7 +32,7 @@ class User extends BaseModel{
     }
 
     public function getUsersIDandPass($user_name){
-        $sql = sprintf('SELECT id pass FROM %s WHERE name = :user_name', $this->name);
+        $sql = sprintf('SELECT id, pass FROM %s WHERE name = :user_name', $this->name);
         $params = array('user_name' => $user_name);
         $row = $this->query($sql, $params);
         $res = array('id'=> $row[0]['id'], 'pass'=> $row[0]['pass']);
